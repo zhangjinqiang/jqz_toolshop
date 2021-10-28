@@ -7,8 +7,8 @@ else
 fi
 
 
-if cat ~/.vimrc | grep 'source ~/dotfiles/vimrc' &> /dev/null; then
+if cat ~/.vimrc | grep 'source ~/jqz_toolshop/dotfiles/vimrc' &> /dev/null; then
     echo "vimrc is already configured, skipping."
 else
-    echo 'source ~/dotfiles/vimrc' >> ~/.vimrc
+    echo 'source ~/jqz_toolshop/dotfiles/vimrc' >> ~/.vimrc
 fi
