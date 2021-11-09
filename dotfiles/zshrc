@@ -21,3 +21,7 @@ zstyle ':vcs_info:git:*' formats '(%b)'
 setopt PROMPT_SUBST
 PROMPT='%n@${PWD/#$HOME/~}%{$fg[cyan]%}${vcs_info_msg_0_} %{$reset_color%}>> '
 ################# show git branch name in prompt ##################
+#
+
+export TERM=xterm-256color
+
