@@ -107,6 +107,8 @@ nnoremap <Down> <nop>
 inoremap <esc> <nop>
 inoremap jk <esc>
 
+nnoremap <leader>bp :execute "rightbelow vsplit" . bufname("#")<cr>
+
 " Above is from learn vimscript the hard way
 "===================================================
 
