@@ -3,6 +3,7 @@ syntax on
 set guicursor=
 set nowrap
 set hlsearch
+set incsearch
 set noerrorbells
 set number
 set relativenumber
@@ -17,7 +18,6 @@ set noswapfile
 set nobackup
 set undodir=~/.vim/undodir
 set undofile
-set incsearch
 set termguicolors
 set scrolloff=8
 set noshowmode
@@ -55,7 +55,7 @@ endif
 " }}}
 
 " mappings
-let mapleader = "\<Space>"
+let mapleader = ","
 
 nnoremap <leader>l :set list!<CR>
 
@@ -126,6 +126,14 @@ inoremap <esc> <nop>
 inoremap jk <esc>
 
 nnoremap <leader>bp :execute "rightbelow vsplit" . bufname("#")<cr>
+
+" show trailing spaces as Error
+nnoremap <leader>w :match Error /\v +$/<cr>
+" remove trailing spaces
+nnoremap <leader>W :%s/\v +$//g<cr>
+
+" auto inject \v for searching
+nnoremap / /\v
 
 " Above is from learn vimscript the hard way
 "===================================================
