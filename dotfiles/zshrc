@@ -10,6 +10,7 @@ git config --global alias.last 'log -1 HEAD'
 git config --global alias.pl 'log --graph --abbrev-commit --pretty=oneline --decorate -5'
 git config --global alias.st status
 git config --global alias.unstage 'reset HEAD --'
+git config --global alias.df1 diff HEAD~1
 
 ################# show git branch name in prompt ##################
 # Load version control information
