@@ -130,7 +130,7 @@ nnoremap <leader>bp :execute "rightbelow vsplit" . bufname("#")<cr>
 " show trailing spaces as Error
 nnoremap <leader>w :match Error /\v +$/<cr>
 " remove trailing spaces
-nnoremap <leader>W :%s/\v +$//g<cr>
+nnoremap <leader>W :%s/\v +$//g<cr>:update<cr>
 
 " auto inject \v for searching
 nnoremap / /\v
