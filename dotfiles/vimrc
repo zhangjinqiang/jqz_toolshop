@@ -26,6 +26,9 @@ set showmatch
 set matchtime=7
 set pastetoggle=<F3>
 
+" disable 'bracketed paste mode'
+set t_BE=
+
 " Give more space for displaying messages
 set cmdheight=2
 
