@@ -124,7 +124,14 @@ nnoremap <leader>^ kddpk
 
 " make current word upcase
 inoremap <c-u> <esc>viwUea
-nmap <c-u> g~iw
+nnoremap <c-u> g~iw
+
+" save file
+nnoremap <c-s> :w<cr>
+inoremap <c-s> <esc>:w<cr>li
+
+" append next line to current line
+nnoremap <leader>an j^d$kg_pjddkg_
 
 nnoremap <leader>ev :vsplit ~/jqz_toolshop/dotfiles/vimrc<cr>
 nnoremap <leader>sv :source ~/jqz_toolshop/dotfiles/vimrc<cr>
