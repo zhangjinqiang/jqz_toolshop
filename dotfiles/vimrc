@@ -154,6 +154,9 @@ nnoremap <leader>W :%s/\v +$//g<cr>:update<cr>
 " auto inject \v for searching
 nnoremap / /\v
 
+" replacing word under cursor
+nnoremap <leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
+
 " Above is from learn vimscript the hard way
 "===================================================
 
